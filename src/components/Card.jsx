@@ -24,7 +24,7 @@ const Card = ({ user }) => {
 
     <div className='main-container d-flex align-item-center justify-content-center  mt-4 '>
 
-      <div className='card-container border border-dark text-center rounded bg-warning  min-w-50 p-5'>
+      <div className='card-container border border-dark text-center rounded bg-warning  min-w-50 p-5 shadow-lg'>
 
         <img className='rounded-5 p-3' src={large} alt="" />
         <h1>{`${title}.${first} ${last}`}</h1>
