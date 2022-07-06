@@ -1,12 +1,12 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsGenderFemale} from "react-icons/bs";
-import {AiFillMail} from "react-icons/ai";
-import {BiMapPin} from "react-icons/bi"
+import { BsGenderFemale } from "react-icons/bs";
+import { AiFillMail } from "react-icons/ai";
+import { BiMapPin } from "react-icons/bi"
 
 const Card = ({ user }) => {
 
-  
+
 
 
 
@@ -28,38 +28,38 @@ const Card = ({ user }) => {
 
     <div className='main-container d-flex align-item-center justify-content-center  mt-4 '>
 
-      <div className='card-container border border-dark text-center rounded bg-warning  min-w-50 p-5 shadow-lg'>
+      <div className='card-container border border-dark text-left rounded bg-warning  min-w-50 p-5 shadow-lg'>
 
-        <img className='rounded-5 p-3' src={large} alt="" />
-
-
-        <h1>{`${title}.${first} ${last}`}
-          </h1>
+        <img className='rounded-5 p-3 mx-auto d-flex' src={large} alt="" />
 
 
-        <h2>{age}</h2>
+        <h1 className='ms-5 d-flex mb-5 '>{`${title}.${first} ${last}`}
+        </h1>
 
 
-        <h2>{gender}
-        <BsGenderFemale size={20} /></h2>
+        <h3>{age}</h3>
 
 
-        <h2>{`${city}/${country}`}
-        <BiMapPin size={20}/></h2>
+        <h3>{gender}
+          <BsGenderFemale className='text-primary ms-3' size={25} /></h3>
 
 
-        <h2>{email}
-        <AiFillMail size={20}/></h2>
-      
-         
-        </div>
+        <h3>{`${city}/${country}`}
+          <BiMapPin className='text-success ms-3 ' size={25} /></h3>
 
+
+        <h3>{email}
+          <AiFillMail className='text-danger ms-3' size={25} /></h3>
 
 
       </div>
 
 
-    
+
+    </div>
+
+
+
 
   )
 }
