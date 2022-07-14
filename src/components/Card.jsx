@@ -26,9 +26,9 @@ const Card = ({ user }) => {
 
   return (
 
-    <div className='main-container d-flex align-item-center justify-content-center  mt-4 '>
+    <div className='main-container d-flex align-item-center justify-content-center  mt-4 max-w-50% min-w-50% '>
 
-      <div className='card-container border border-dark text-left rounded bg-warning  min-w-50 p-5 shadow-lg'>
+      <div className='card-container border border-dark text-left rounded bg-warning   max-w-50% min-w-50% p-5 shadow-lg'>
 
         <img className='rounded-5 p-3 mx-auto d-flex' src={large} alt="" />
 
